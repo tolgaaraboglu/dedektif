@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    color: #eee;
+    background: #3e3527 url('') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+}
+
+#game {
+    flex: 2;
+    padding: 20px;
+}
+
+#scene {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    animation: fadein 1s;
+}
+
+#options button {
+    background: #c9b37e;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+#options button:hover {
+    background: #d3ba88;
+}
+
+#notebook {
+    width: 300px;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    color: #ffebcd;
+    font-family: 'Courier New', monospace;
+}
+
+#notebook ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 1em;
+}
